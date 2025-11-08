@@ -1,10 +1,15 @@
+import AppProviders from './providers/AppProviders';
+import RouterProvider from './providers/RouterProvider';
+
+/**
+ * App
+ * Root application component with all providers
+ */
 function App() {
   return (
-    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>School ERP Frontend</h1>
-      <p>Setup in progress...</p>
-      <p>Phase 1: Project initialization complete ✅</p>
-    </div>
+    <AppProviders>
+      <RouterProvider />
+    </AppProviders>
   );
 }
 
